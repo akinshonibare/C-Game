@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\card.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\deck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\implementation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\environment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\graveyard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="verifications\verify_connection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="verifications\verify_sfml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\ChooseDeck1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\ChooseDeck2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\EndGameScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\ErrorScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\Instructions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\LoadingScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\MainMenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\PlayGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\SplashScreen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frontend_src\WalkthroughGame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\card.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\deck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\environment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\graveyard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\ChooseDeck1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\ChooseDeck2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\EndGameScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\ErrorScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\Instructions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\LoadingScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\MainMenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\PlayGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\SplashScreen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frontend_src\WalkthroughGame.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="mysqlcppconn.dll" />
+    <None Include="scugog_project.aps" />
+    <None Include="dll\mysqlcppconn.dll" />
+    <None Include="dll\openal32.dll" />
+    <None Include="dll\sfml-audio-2.dll" />
+    <None Include="dll\sfml-audio-d-2.dll" />
+    <None Include="dll\sfml-graphics-d-2.dll" />
+    <None Include="dll\sfml-network-2.dll" />
+    <None Include="dll\sfml-network-d-2.dll" />
+    <None Include="dll\sfml-system-d-2.dll" />
+    <None Include="dll\sfml-window-d-2.dll" />
+    <None Include="sfml-graphics-2.dll" />
+    <None Include="sfml-system-2.dll" />
+    <None Include="sfml-window-2.dll" />
+    <None Include="sfml-network-2.dll" />
+    <None Include="sfml-audio-2.dll" />
+    <None Include="openal32.dll" />
+    <None Include="resources\audio\nice_music.ogg" />
+    <None Include="resources\images\player_one_wins.psd" />
+    <None Include="resources\images\player_two_wins.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\fonts\sansation.ttf" />
+    <Font Include="resources\fonts\ARLRDBD.TTF" />
+    <Font Include="resources\fonts\BerlinSansFBDemiBold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\images\bg.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\black.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\carrot.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\cute_image.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\farm.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\icon.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\mm.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\play.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\Splashscreen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\splash_screen.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\splash_screen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\apple.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\beet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\broccoli.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\brusselsprout.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\cabbage.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\carrot.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\cauliflower.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\corn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\kale.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\onion.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\orange.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\peach.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\pear.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\pepper.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\pineapple.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\pomegranate.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\potato.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\pumpkin.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\radish.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\spinach.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\turnip.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\hardy_veggies.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\money.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\sugar_rush_fruits.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\cardc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\cherry.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\grapes.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\kiwi.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\mango.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\raspberry.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\strawberry.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\banana.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\blackberry.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures\blueberry.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\cardcc.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\cardExample.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\splash_screen2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\icons\icon_attack.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\icons\icon_cost.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\icons\icon_defence.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\icons\icon_power.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\bg2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\player_one_wins.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\player_two_wins.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\farmer.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\farmer2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\loading_screen.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\bg3.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\splash_screen_with_click.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\bg5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\button.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\cuttingboard.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\error_screen.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\main_menu.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\outline.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures_no_abilities\banana.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures_no_abilities\beet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures_no_abilities\blackberry.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures_no_abilities\blueberry.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures_no_abilities\brusselsprout.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures_no_abilities\kale.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures_no_abilities\pomegranate.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures_no_abilities\pumpkin.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resources\images\card_pictures_no_abilities\raspberry.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

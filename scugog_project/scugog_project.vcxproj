@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D29C7706-6794-4A99-8A24-3CAE46A373D7}</ProjectGuid>
+    <RootNamespace>scugogproject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Logan Roth\Downloads\boost_1_65_1\boost_1_65_1;..\SFML-2.4.2-windows-vc14-32-bit\SFML-2.4.2\include;..\scugogrepository;..\MySQL Connector C++ 1.1.9\include;C:\Users\Ryan\Documents\Source\Repos\boost_1_65_1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\SFML-2.4.2-windows-vc14-32-bit\SFML-2.4.2\lib;..\MySQL Connector C++ 1.1.9\lib\opt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;mysqlcppconn.lib;kernel32.lib;user32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\scugogrepository;C:\Users\Grace\Documents\Source\boost_1_65_1;..\SFML-2.4.2-windows-vc14-32-bit\SFML-2.4.2\include;C:\Users\Ryan\Documents\Source\Repos\boost_1_65_1;..\MySQL Connector C++ 1.1.9\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\SFML-2.4.2-windows-vc14-32-bit\SFML-2.4.2\lib;..\MySQL Connector C++ 1.1.9\lib\opt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;mysqlcppconn.lib;kernel32.lib;user32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="frontend_src\ChooseDeck1.cpp" />
+    <ClCompile Include="frontend_src\ChooseDeck2.cpp" />
+    <ClCompile Include="frontend_src\EndGameScreen.cpp" />
+    <ClCompile Include="frontend_src\ErrorScreen.cpp" />
+    <ClCompile Include="frontend_src\Game.cpp" />
+    <ClCompile Include="frontend_src\Instructions.cpp" />
+    <ClCompile Include="frontend_src\LoadingScreen.cpp" />
+    <ClCompile Include="frontend_src\main.cpp" />
+    <ClCompile Include="frontend_src\MainMenu.cpp" />
+    <ClCompile Include="frontend_src\PlayGame.cpp" />
+    <ClCompile Include="frontend_src\SplashScreen.cpp" />
+    <ClCompile Include="frontend_src\WalkthroughGame.cpp" />
+    <ClCompile Include="src\card.cpp" />
+    <ClCompile Include="src\deck.cpp" />
+    <ClCompile Include="src\environment.cpp" />
+    <ClCompile Include="src\graveyard.cpp" />
+    <ClCompile Include="src\implementation.cpp" />
+    <ClCompile Include="src\player.cpp" />
+    <ClCompile Include="frontend_src\stdafx.cpp" />
+    <ClCompile Include="verifications\verify_connection.cpp" />
+    <ClCompile Include="verifications\verify_sfml.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frontend_src\ChooseDeck1.h" />
+    <ClInclude Include="frontend_src\ChooseDeck2.h" />
+    <ClInclude Include="frontend_src\EndGameScreen.h" />
+    <ClInclude Include="frontend_src\ErrorScreen.h" />
+    <ClInclude Include="frontend_src\Game.h" />
+    <ClInclude Include="frontend_src\Instructions.h" />
+    <ClInclude Include="frontend_src\LoadingScreen.h" />
+    <ClInclude Include="frontend_src\MainMenu.h" />
+    <ClInclude Include="frontend_src\PlayGame.h" />
+    <ClInclude Include="frontend_src\SplashScreen.h" />
+    <ClInclude Include="frontend_src\WalkthroughGame.h" />
+    <ClInclude Include="src\card.h" />
+    <ClInclude Include="src\deck.h" />
+    <ClInclude Include="src\environment.h" />
+    <ClInclude Include="src\graveyard.h" />
+    <ClInclude Include="src\player.h" />
+    <ClInclude Include="frontend_src\stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dll\mysqlcppconn.dll" />
+    <None Include="dll\openal32.dll" />
+    <None Include="dll\sfml-audio-2.dll" />
+    <None Include="dll\sfml-audio-d-2.dll" />
+    <None Include="openal32.dll" />
+    <None Include="resources\audio\nice_music.ogg" />
+    <None Include="resources\images\player_one_wins.psd" />
+    <None Include="resources\images\player_two_wins.psd" />
+    <None Include="sfml-audio-2.dll" />
+    <None Include="sfml-graphics-2.dll" />
+    <None Include="dll\sfml-graphics-d-2.dll" />
+    <None Include="dll\sfml-network-2.dll" />
+    <None Include="dll\sfml-network-d-2.dll" />
+    <None Include="sfml-network-2.dll" />
+    <None Include="sfml-system-2.dll" />
+    <None Include="dll\sfml-system-d-2.dll" />
+    <None Include="sfml-window-2.dll" />
+    <None Include="dll\sfml-window-d-2.dll" />
+    <None Include="mysqlcppconn.dll" />
+    <None Include="scugog_project.aps" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="resources\fonts\ARLRDBD.TTF" />
+    <Font Include="resources\fonts\BerlinSansFBDemiBold.ttf" />
+    <Font Include="resources\fonts\sansation.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resources\images\bg.jpg" />
+    <Image Include="resources\images\bg2.png" />
+    <Image Include="resources\images\bg3.jpg" />
+    <Image Include="resources\images\bg5.png" />
+    <Image Include="resources\images\black.png" />
+    <Image Include="resources\images\button.png" />
+    <Image Include="resources\images\cardcc.png" />
+    <Image Include="resources\images\cardExample.png" />
+    <Image Include="resources\images\card_pictures\banana.png" />
+    <Image Include="resources\images\card_pictures\blackberry.png" />
+    <Image Include="resources\images\card_pictures\blueberry.png" />
+    <Image Include="resources\images\card_pictures\cardc.png" />
+    <Image Include="resources\images\card_pictures\apple.png" />
+    <Image Include="resources\images\card_pictures\beet.png" />
+    <Image Include="resources\images\card_pictures\broccoli.png" />
+    <Image Include="resources\images\card_pictures\brusselsprout.png" />
+    <Image Include="resources\images\card_pictures\cabbage.png" />
+    <Image Include="resources\images\card_pictures\carrot.png" />
+    <Image Include="resources\images\card_pictures\cauliflower.png" />
+    <Image Include="resources\images\card_pictures\cherry.png" />
+    <Image Include="resources\images\card_pictures\corn.png" />
+    <Image Include="resources\images\card_pictures\grapes.png" />
+    <Image Include="resources\images\card_pictures\kale.png" />
+    <Image Include="resources\images\card_pictures\kiwi.png" />
+    <Image Include="resources\images\card_pictures\mango.png" />
+    <Image Include="resources\images\card_pictures\onion.png" />
+    <Image Include="resources\images\card_pictures\orange.png" />
+    <Image Include="resources\images\card_pictures\peach.png" />
+    <Image Include="resources\images\card_pictures\pear.png" />
+    <Image Include="resources\images\card_pictures\pepper.png" />
+    <Image Include="resources\images\card_pictures\pineapple.png" />
+    <Image Include="resources\images\card_pictures\pomegranate.png" />
+    <Image Include="resources\images\card_pictures\potato.png" />
+    <Image Include="resources\images\card_pictures\pumpkin.png" />
+    <Image Include="resources\images\card_pictures\radish.png" />
+    <Image Include="resources\images\card_pictures\raspberry.png" />
+    <Image Include="resources\images\card_pictures\spinach.png" />
+    <Image Include="resources\images\card_pictures\strawberry.png" />
+    <Image Include="resources\images\card_pictures\turnip.png" />
+    <Image Include="resources\images\card_pictures_no_abilities\banana.png" />
+    <Image Include="resources\images\card_pictures_no_abilities\beet.png" />
+    <Image Include="resources\images\card_pictures_no_abilities\blackberry.png" />
+    <Image Include="resources\images\card_pictures_no_abilities\blueberry.png" />
+    <Image Include="resources\images\card_pictures_no_abilities\brusselsprout.png" />
+    <Image Include="resources\images\card_pictures_no_abilities\kale.png" />
+    <Image Include="resources\images\card_pictures_no_abilities\pomegranate.png" />
+    <Image Include="resources\images\card_pictures_no_abilities\pumpkin.png" />
+    <Image Include="resources\images\card_pictures_no_abilities\raspberry.png" />
+    <Image Include="resources\images\carrot.png" />
+    <Image Include="resources\images\cute_image.jpg" />
+    <Image Include="resources\images\cuttingboard.png" />
+    <Image Include="resources\images\error_screen.png" />
+    <Image Include="resources\images\farm.jpg" />
+    <Image Include="resources\images\farmer.png" />
+    <Image Include="resources\images\farmer2.png" />
+    <Image Include="resources\images\hardy_veggies.png" />
+    <Image Include="resources\images\icon.png" />
+    <Image Include="resources\images\icons\icon_attack.png" />
+    <Image Include="resources\images\icons\icon_cost.png" />
+    <Image Include="resources\images\icons\icon_defence.png" />
+    <Image Include="resources\images\icons\icon_power.png" />
+    <Image Include="resources\images\loading_screen.jpg" />
+    <Image Include="resources\images\main_menu.png" />
+    <Image Include="resources\images\mm.jpg" />
+    <Image Include="resources\images\money.png" />
+    <Image Include="resources\images\outline.png" />
+    <Image Include="resources\images\play.jpg" />
+    <Image Include="resources\images\player_one_wins.png" />
+    <Image Include="resources\images\player_two_wins.png" />
+    <Image Include="resources\images\Splashscreen.png" />
+    <Image Include="resources\images\splash_screen.jpg" />
+    <Image Include="resources\images\splash_screen.png" />
+    <Image Include="resources\images\splash_screen2.png" />
+    <Image Include="resources\images\splash_screen_with_click.png" />
+    <Image Include="resources\images\sugar_rush_fruits.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
