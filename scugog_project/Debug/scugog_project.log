@@ -1,26 +1,2 @@
-﻿  WalkthroughGame.cpp
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(266): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(280): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(287): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(364): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(365): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(399): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(413): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(420): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(488): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(521): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(522): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(627): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(641): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(648): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(748): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(749): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(843): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(857): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(864): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(976): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(977): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(1147): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(1240): warning C4018: '<': signed/unsigned mismatch
-c:\users\ryan\documents\source\repos\scugogrepository\scugog_project\frontend_src\walkthroughgame.cpp(1053): warning C4715: 'WalkthroughGame::Play': not all control paths return a value
-  scugog_project.vcxproj -> C:\Users\Ryan\Documents\Source\Repos\scugogrepository\scugog_project\Debug\scugog_project.exe
+﻿  Instructions.cpp
+  scugog_project.vcxproj -> C:\Users\eric\Documents\Source\Repos\scugogrepository\scugog_project\Debug\scugog_project.exe

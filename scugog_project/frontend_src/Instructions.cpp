@@ -5,6 +5,17 @@
 
 int Instructions::Show(sf::RenderWindow & renderWindow)
 {
+	// New instruction page uses an image wallpaper instead of sfml now
+	sf::Texture wallpaper;
+	if (wallpaper.loadFromFile("../scugog_project/resources/images/new_instruction_page.png") != true)
+	{
+		return -1;
+	}
+	sf::Sprite wallpaperSprite(wallpaper);
+	renderWindow.draw(wallpaperSprite);
+
+	// Old sfml code used to make old instructions page
+	/*
 	sf::Texture texture, card, attackIcon, defenceIcon, costIcon, powerIcon, cuttingBoard;
 	if (texture.loadFromFile("../scugog_project/resources/images/bg5.png") != true)
 	{
@@ -188,6 +199,8 @@ int Instructions::Show(sf::RenderWindow & renderWindow)
 	renderWindow.draw(text2);
 	renderWindow.draw(text3);
 	renderWindow.draw(instr);
+	*/
+
 	renderWindow.display();
 
 	sf::Event event;

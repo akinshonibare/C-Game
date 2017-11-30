@@ -173,6 +173,10 @@ void Game::GameLoop()
 					_gameState = Game::Exiting;
 					break;
 				}
+				else if (player_won == -3) {
+					_gameState = Game::ShowingMenu;
+					break;
+				}
 				else {
 					int end_game_return = ShowEndGame(player_won);
 					if (end_game_return == -2) {

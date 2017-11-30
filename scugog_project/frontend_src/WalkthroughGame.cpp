@@ -21,8 +21,8 @@ int WalkthroughGame::Play(sf::RenderWindow & renderWindow)
 	sf::Texture texture, texture2, card, money, deck1, deck2, cBoard, button, oLine, button_oLine, cuttingboard_oLine, farmer2_oLine, farmer_oLine;
 	int deck1Index = players[0].get_deck().get_deck_num();
 	int deck2Index = players[1].get_deck().get_deck_num();
-	cout << deck1Index << endl;
-	cout << deck2Index << endl;
+	//cout << deck1Index << endl;
+	//cout << deck2Index << endl;
 	sf::Font font;
 	// load images needed
 	if (!font.loadFromFile("../scugog_project/resources/fonts/BerlinSansFBDemiBold.ttf")) {
@@ -354,7 +354,7 @@ int WalkthroughGame::Play(sf::RenderWindow & renderWindow)
 			instructions.setPosition(sf::Vector2f(60, 600));
 			renderWindow.draw(instructions);
 			sf::Sprite outline(farmer2_oLine);
-			outline.setPosition(52, 805);
+			outline.setPosition(25, 775);
 			renderWindow.draw(outline);
 			renderWindow.display();
 			while (renderWindow.pollEvent(event))
@@ -363,7 +363,7 @@ int WalkthroughGame::Play(sf::RenderWindow & renderWindow)
 					sf::Vector2i mousePos = sf::Mouse::getPosition();
 					float horz = mousePos.x;
 					float vert = mousePos.y;
-					cout << "Mouse x: " << horz << " Mouse y: " << vert << endl;
+					//cout << "Mouse x: " << horz << " Mouse y: " << vert << endl;
 					error.setString("");
 					if (inPerson(p1Deck, horz, vert)) {
 						player_turn_on = false;
@@ -498,7 +498,7 @@ int WalkthroughGame::Play(sf::RenderWindow & renderWindow)
 				if (clicked_through) {
 					instructions.setString("Now end your turn!");
 					outline.setTexture(button_oLine);
-					outline.setPosition(1553, 300);
+					outline.setPosition(1610, 325);
 					outline.setScale(sf::Vector2f(1, 1));
 				}
 				else {
@@ -726,7 +726,7 @@ int WalkthroughGame::Play(sf::RenderWindow & renderWindow)
 				if (clicked_through) {
 					instructions.setString("Now end your turn!");
 					outline.setTexture(button_oLine);
-					outline.setPosition(1553, 300);
+					outline.setPosition(1610, 325);
 					outline.setScale(sf::Vector2f(1, 1));
 				}
 				else {
@@ -956,13 +956,13 @@ int WalkthroughGame::Play(sf::RenderWindow & renderWindow)
 					outline.setTexture(farmer_oLine);
 					instructions.setString("Slay your opponent with your power!");
 					outline.setScale(sf::Vector2f(1, 1));
-					outline.setPosition(35, 153);
+					outline.setPosition(25, 145);
 				}
 				else {
 					instructions.setString("Chop it for an extra resource!");
 					outline.setTexture(cuttingboard_oLine);
 					outline.setScale(sf::Vector2f(1, 1));
-					outline.setPosition(1627, 475);
+					outline.setPosition(1627, 470);
 				}
 			}
 			instructions.setPosition(sf::Vector2f(60, 600));

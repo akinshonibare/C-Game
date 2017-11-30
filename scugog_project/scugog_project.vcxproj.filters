@@ -385,5 +385,8 @@
     <Image Include="resources\images\card_pictures_no_abilities\raspberry.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="resources\images\new_instruction_page.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -75,7 +75,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Users\Logan Roth\Downloads\boost_1_65_1\boost_1_65_1;..\SFML-2.4.2-windows-vc14-32-bit\SFML-2.4.2\include;..\scugogrepository;..\MySQL Connector C++ 1.1.9\include;C:\Users\Ryan\Documents\Source\Repos\boost_1_65_1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\eric\Documents\Queens\CMPE320 - Software Development\set up\boost_1_65_1;C:\Users\Logan Roth\Downloads\boost_1_65_1\boost_1_65_1;..\SFML-2.4.2-windows-vc14-32-bit\SFML-2.4.2\include;..\scugogrepository;..\MySQL Connector C++ 1.1.9\include;C:\Users\Ryan\Documents\Source\Repos\boost_1_65_1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
@@ -255,6 +255,7 @@
     <Image Include="resources\images\main_menu.png" />
     <Image Include="resources\images\mm.jpg" />
     <Image Include="resources\images\money.png" />
+    <Image Include="resources\images\new_instruction_page.png" />
     <Image Include="resources\images\outline.png" />
     <Image Include="resources\images\play.jpg" />
     <Image Include="resources\images\player_one_wins.png" />

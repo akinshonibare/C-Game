@@ -14,6 +14,7 @@ public:
 	int Play(sf::RenderWindow& window);
 	bool inCard(sf::Sprite crd, float mpx, float mpy);
 	bool inText(sf::Text text, float mpx, float mpy);
+	bool inText2(sf::Text text, float mpx, float mpy);
 	bool inGrave(sf::Sprite crd, float mpx, float mpy);
 	int handleClicks(vector<sf::Sprite> clicks, vector<Card> cardClicks, int indexOne, int indexTwo);
 	int handleAbility(Card card, int index);

@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "PlayGame.h"
 #include <random>
+#include "Instructions.h"
 
 PlayGame::PlayGame() {
 
@@ -23,13 +24,34 @@ int PlayGame::Play(sf::RenderWindow & renderWindow)
 	sf::Texture texture, texture2, card, money, deck1, deck2, cBoard, button, oLine;
 	int deck1Index = players[0].get_deck().get_deck_num();
 	int deck2Index = players[1].get_deck().get_deck_num();
-	cout << deck1Index << endl;
-	cout << deck2Index << endl;
+	//cout << deck1Index << endl;
+	//cout << deck2Index << endl;
 	sf::Font font;
 	// load images needed
 	if (!font.loadFromFile("../scugog_project/resources/fonts/BerlinSansFBDemiBold.ttf")) {
 		return -1;
 	}
+
+
+	// =========================================================================================================================================================================================================
+	sf::Text instructions_text, exit_text;
+	instructions_text.setFont(font);
+	instructions_text.setString("INSTRUCTIONS");
+	instructions_text.setCharacterSize(50);
+	instructions_text.setFillColor(sf::Color::Black);
+	instructions_text.setStyle(sf::Text::Style::Italic);
+	sf::Rect<float> instructions_text_size = instructions_text.getGlobalBounds();
+	instructions_text.setPosition(sf::Vector2f(1700 - instructions_text_size.width / 2, 100  - instructions_text_size.height / 2));
+
+	exit_text.setFont(font);
+	exit_text.setString("EXIT");
+	exit_text.setCharacterSize(50);
+	exit_text.setFillColor(sf::Color::Black);
+	exit_text.setStyle(sf::Text::Style::Italic);
+	sf::Rect<float> exit_text_size = exit_text.getGlobalBounds();
+	exit_text.setPosition(sf::Vector2f(1700 - exit_text_size.width / 2, 150 - exit_text_size.height / 2));
+	//==========================================================================================================================================================================================================
+		
 
 	if (texture.loadFromFile("../scugog_project/resources/images/bg3.jpg") != true)
 	{
@@ -326,6 +348,8 @@ int PlayGame::Play(sf::RenderWindow & renderWindow)
 				able.setPosition(sf::Vector2f(windowSize.x / 2 - able_size.width / 2 + 60, 650));
 				renderWindow.draw(able);
 			}
+			renderWindow.draw(instructions_text);
+			renderWindow.draw(exit_text);
 			renderWindow.display();
 			while (renderWindow.pollEvent(event))
 			{
@@ -341,6 +365,16 @@ int PlayGame::Play(sf::RenderWindow & renderWindow)
 						player_turn_on = false;
 						players[player_turn].set_current_resources(players[player_turn].get_current_resources() + 2);
 						env.change_turn();
+					}
+					if (inText2(instructions_text, horz, vert)) {
+						Instructions instructions;
+						int instructions_return = instructions.Show(renderWindow);
+						if (instructions_return == -1) {
+							return -1;
+						}
+					}
+					if (inText2(exit_text, horz, vert)) {
+						return -3;
 					}
 					if (clicks.empty()) {
 						// first "card click event", i.e. who to move to field or attack with
@@ -480,6 +514,19 @@ int PlayGame::Play(sf::RenderWindow & renderWindow)
 		h2Full = tempFull;
 	}
 
+}
+
+bool PlayGame::inText2(sf::Text text, float mpx, float mpy)
+{
+	sf::Rect<float> tsize = text.getGlobalBounds();
+	float cd1L = tsize.left + 15;
+	float cd1R = tsize.left + tsize.width + 15;
+	float cd1T = tsize.top;
+	float cd1B = tsize.top + tsize.height;
+	if ((mpx > cd1L) && (mpx < cd1R) && (mpy > cd1T) && (mpy < cd1B)) {
+		return true;
+	}
+	return false;
 }
 
 bool PlayGame::inCard(sf::Sprite crd, float mpx, float mpy)
@@ -765,8 +812,9 @@ int PlayGame::handleAbility(Card card, int index) {
 	else if (ability == 2) {
 		for (int i = 0; i < size(hand); i++) {
 			if (players[turn].get_hand()[i].get_ability() == 2) {
-				for (int index2 = 0; index2 < size(f2Full); index2) {
+				for (int index2 = 0; index2 < size(f1); index2++) {
 					if (!f1Full[index2]) {
+						clickable[index] = false;
 						pair<sf::Sprite, sf::Text> pair = players[turn].get_hand()[i].draw_card(0, 0);
 						f1[index2] = pair;
 						f1Full[index2] = true;
@@ -822,6 +870,7 @@ int PlayGame::handleAbility(Card card, int index) {
 			abilities[turn][index] = true;
 			able.setString("Enemy stole a resource!");
 			ableSet = turn;
+			clickable[index] = false;
 		}
 		else {
 			return 4;
@@ -846,6 +895,7 @@ int PlayGame::handleAbility(Card card, int index) {
 					h2Full[6] = false;
 				}
 			}
+			clickable[index] = false;
 		}
 		else {
 			return 4;
@@ -876,6 +926,7 @@ int PlayGame::handleAbility(Card card, int index) {
 					h2Full[6] = false;
 				}
 			}
+			clickable[index] = false;
 		}
 		else {
 			return 4;
